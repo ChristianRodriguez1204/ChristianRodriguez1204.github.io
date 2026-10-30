@@ -1,90 +1,68 @@
-/* Personal color and font choices */
 :root {
-  --accent: #62d0c6;
-  --text: #e7edf3;
-  --background: #10151d;
-  --card: #1a2430;
-  --font: "Trebuchet MS", Arial, sans-serif;
+  --accent: #245a7a;
+  --text: #222222;
+  --background: #f4f4f4;
+  --card: #ffffff;
+  --font: Arial, Helvetica, sans-serif;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
-  padding: 3rem 1rem;
-  background: radial-gradient(circle at top, #1a2b37 0, var(--background) 42rem);
+  padding: 2rem 1rem;
+  background: var(--background);
   color: var(--text);
   font-family: var(--font);
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 header, main, footer {
-  max-width: 44rem;
+  max-width: 40rem;
   margin: 0 auto;
 }
 
 header {
   text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.eyebrow {
-  color: var(--accent);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 h1 {
-  margin: 0.35rem 0;
-  font-size: clamp(2rem, 6vw, 3.2rem);
-  line-height: 1.15;
+  margin-bottom: 0.25rem;
 }
 
-header p:last-child {
-  margin: 0.65rem 0 0;
-  color: #b7c4cf;
+header p {
+  margin-top: 0;
 }
 
 section {
   background: var(--card);
-  border: 1px solid #2b3a48;
-  border-left: 4px solid var(--accent);
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.1rem;
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  border: 1px solid #dddddd;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  margin: 0 0 0.65rem;
-  font-size: 1.25rem;
+  margin-top: 0;
   color: var(--accent);
+  font-size: 1.25rem;
 }
 
-p { margin: 0; }
-
-ul { padding-left: 1.3rem; margin: 0; }
-
-li + li { margin-top: 0.2rem; }
+ul {
+  padding-left: 1.25rem;
+  margin-bottom: 0;
+}
 
 a {
   color: var(--accent);
-  font-weight: 700;
 }
-
-a:hover { color: #a5fff4; }
 
 footer {
   text-align: center;
   font-size: 0.9rem;
-  color: #9aabb9;
-  margin-top: 2rem;
-}
-
-@media (max-width: 480px) {
-  body { padding-top: 2rem; }
-  section { padding: 1rem 1.1rem; }
+  color: #555555;
+  margin-top: 1.5rem;
 }
